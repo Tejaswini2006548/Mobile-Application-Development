@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+ <ImageView
+     android:layout_width="0dp"
+     android:layout_height="0dp"
+     android:src="@drawable/images"
+     android:scaleType="fitXY"
+     android:alpha="0.5"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     />
+
+ <LinearLayout
+     android:id="@+id/mainContainer"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:orientation="vertical"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent">
+
+  <TextView
+      android:id="@+id/title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:gravity="center"
+      android:text="Rock Paper Scissor App"
+      android:textColor="@color/material_dynamic_neutral_variant20"
+      android:textSize="28sp"
+      android:textStyle="bold"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/scores"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginBottom="18dp">
+
+   <TextView
+       android:id="@+id/tvUserScore"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:text="You:0"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       android:gravity="center"
+       android:textColor="#00695C"
+       />
+
+   <TextView
+       android:id="@+id/tvComputerScore"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:text="Computer:0"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       android:gravity="center"
+       android:textColor="#00695C"
+       />
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/tvComputerChoice"
+      android:layout_marginBottom="20dp"
+      android:text="Computer Choice Not Selected"
+      android:textAlignment="center"
+      android:textColor="@color/material_dynamic_neutral_variant20"
+      android:textSize="22sp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:text="Choose Your Move"
+      android:textAlignment="center"
+      android:textColor="@color/material_dynamic_neutral20"
+      android:textSize="24sp"
+      android:textStyle="bold" />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/imgContainer"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginBottom="18dp">
+   <ImageView
+       android:id="@+id/imgRock"
+       android:layout_width="0dp"
+       android:layout_height="100dp"
+       android:layout_weight="1"
+       android:src="@drawable/rock"
+       android:layout_margin="6dp"
+       android:padding="8dp"
+       android:clickable="true"
+       android:focusable="true"
+       android:contentDescription="Rock">
+
+   </ImageView>
+   <ImageView
+       android:id="@+id/imgPaper"
+       android:layout_width="0dp"
+       android:layout_height="100dp"
+       android:layout_weight="1"
+       android:src="@drawable/paper"
+       android:layout_margin="6dp"
+       android:padding="8dp"
+       android:clickable="true"
+       android:focusable="true"
+       android:contentDescription="Paper">
+
+   </ImageView>
+   <ImageView
+       android:id="@+id/imgScissors"
+       android:layout_width="0dp"
+       android:layout_height="100dp"
+       android:layout_weight="1"
+       android:src="@drawable/scissors"
+       android:layout_margin="6dp"
+       android:padding="8dp"
+       android:clickable="true"
+       android:focusable="true"
+       android:contentDescription="Scissors">
+
+   </ImageView>
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:id="@+id/tvUserChoice"
+      android:text="Your Choice:Not selected"
+      android:textAlignment="center"
+      android:textColor="@color/material_dynamic_neutral20"
+      android:textSize="22sp"
+      android:textStyle="bold" />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/tvResult"
+      android:layout_marginBottom="20dp"
+      android:text="Result will appear here!!"
+      android:textAlignment="center"
+      android:textColor="@color/material_dynamic_neutral20"
+      android:textSize="24sp"
+      android:textStyle="bold" />
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/btnReset"
+      android:text="Reset Game"
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      android:textStyle="bold" />
+ </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_design"
+        android:alpha="0.35"
+        android:scaleType="centerCrop"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <FrameLayout
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/background_design"
+            android:elevation="10dp"
+            android:padding="18dp">
+
+            <ImageView
+                android:id="@+id/starImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_bg"
+                android:padding="18dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/star"
+                tools:ignore="ContentDescription,ImageContrastCheck"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/projectText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="28dp"
+            android:text="Android Project Window&#10;&#10; 1. app -Main application module&#10;&#10;
+2. java - Java source code&#10;&#10; 3. res - Resources folder&#10;&#10;
+4. layout - Screen design files&#10;&#10; 5. drawable- Images and Shapes&#10;&#10;
+6. values - Colors, strings,styles&#10;&#10; 7. AndroidManifest.xml - App information&#10;&#10;
+8. Gradle Scripts - Build settings"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"></TextView>
+            
+    </LinearLayout>
+</FrameLayout>
