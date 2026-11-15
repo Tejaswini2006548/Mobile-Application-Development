@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Student Portal"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentPortal">
+
+        <!-- Student Profile Screen -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <!-- Student Registration Screen -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+
+        <!-- Login Screen - Launcher Activity -->
+        <activity
+            android:name=".Login"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

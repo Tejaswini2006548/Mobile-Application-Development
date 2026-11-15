@@ -1,0 +1,78 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Placement Alerts"
+            android:textColor="#FFFFFF"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:background="#2864AD" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Announcement Title"
+            android:textColor="#23436A"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter announcement title"
+            android:inputType="textCapSentences"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="#23436A"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Enter announcement message"
+            android:gravity="top"
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEND NOTIFICATION"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2864AD"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter an announcement and tap Send Notification. Tap the received alert to view its details."
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

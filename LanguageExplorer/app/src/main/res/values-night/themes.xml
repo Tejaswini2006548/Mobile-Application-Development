@@ -1,0 +1,12 @@
+
+<resources>
+
+    <style name="Base.Theme.LanguageExplorer"
+        parent="@android:style/Theme.Material.Light.NoActionBar">
+    </style>
+
+    <style name="Theme.LanguageExplorer"
+        parent="@style/Base.Theme.LanguageExplorer">
+    </style>
+
+</resources>

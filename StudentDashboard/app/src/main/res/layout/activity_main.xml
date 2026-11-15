@@ -1,0 +1,78 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F7FC"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello, Tejaswini!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#23436A"
+        android:padding="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Roll Number: 24EU04190"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:padding="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attendance: 96%"
+        android:textSize="17sp"
+        android:textColor="#333333"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/studentRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Record&#10;Tejaswini - 24EU04190&#10;Long press here for options"
+        android:textSize="16sp"
+        android:textColor="#23436A"
+        android:background="#DCEBFA"
+        android:padding="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Profile" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About" />
+
+    <Button
+        android:id="@+id/popupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Popup Menu" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Long press the student record to open Context Menu."
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:padding="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="#2864AD"
+            android:text="Task &amp; Attendance"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student ID"
+            android:textColor="#23436A"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp" />
+
+        <EditText
+            android:id="@+id/etStudentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Student ID"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Details"
+            android:textColor="#23436A"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter task details"
+            android:inputType="textCapSentences"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="#23436A"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pending / Completed"
+            android:inputType="textCapWords"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD RECORD"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2864AD"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE RECORD"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2864AD" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Records"
+            android:textColor="#23436A"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search by Student ID or Task"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2864AD" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELETE SELECTED RECORD"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#B3261E" />
+
+        <Button
+            android:id="@+id/btnViewAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIEW ALL RECORDS"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2864AD" />
+
+        <TextView
+            android:id="@+id/tvSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No record selected"
+            android:textColor="#23436A"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saved Records"
+            android:textColor="#23436A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <ListView
+            android:id="@+id/listRecords"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:divider="#B8C8DC"
+            android:dividerHeight="1dp"
+            android:background="#FFFFFF"
+            android:nestedScrollingEnabled="true" />
+
+    </LinearLayout>
+
+</ScrollView>

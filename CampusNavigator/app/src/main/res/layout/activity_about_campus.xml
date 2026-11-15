@@ -1,0 +1,54 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#2864AD"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:text="About Campus"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Campus Services Navigator"
+            android:textColor="#2864AD"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:lineSpacingExtra="7dp"
+            android:text="Welcome to the Campus Services Navigator. This application helps students access important campus services easily.\n\nAvailable Services:\n\n1. University Website - Access university information online.\n\n2. Campus Map - Find the campus location.\n\n3. Contact Office - Open the phone dialer.\n\n4. Share Information - Share campus details with others.\n"
+            android:textColor="#29384A"
+            android:textSize="16sp" />
+
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#2864AD"
+            android:text="Back to Home"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

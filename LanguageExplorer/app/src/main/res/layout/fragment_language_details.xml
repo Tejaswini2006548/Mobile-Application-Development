@@ -1,0 +1,68 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/tvIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="💻"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/tvLanguageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Select a Language"
+            android:textColor="#2864AD"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#23436A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose a programming language from the list above."
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applications"
+            android:textColor="#23436A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/tvFeature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a language to view its applications."
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+</ScrollView>

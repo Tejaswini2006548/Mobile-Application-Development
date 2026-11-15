@@ -1,0 +1,54 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F7FC"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Announcement Details"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#2864AD" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Announcement Title"
+        android:textColor="#23436A"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tvDetailsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#222222"
+        android:padding="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textColor="#23436A"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvDetailsMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:padding="12dp" />
+
+</LinearLayout>

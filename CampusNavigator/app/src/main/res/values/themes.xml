@@ -1,0 +1,13 @@
+
+<resources>
+    <style name="Theme.CampusNavigator"
+        parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">#2864AD</item>
+        <item name="colorPrimaryDark">#173D69</item>
+        <item name="colorAccent">#2864AD</item>
+        <item name="android:statusBarColor">#173D69</item>
+        <item name="android:navigationBarColor">#173D69</item>
+
+    </style>
+</resources>

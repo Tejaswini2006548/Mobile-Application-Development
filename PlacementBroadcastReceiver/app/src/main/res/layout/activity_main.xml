@@ -1,0 +1,130 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#2864AD"
+            android:gravity="center"
+            android:text="Placement Broadcast"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Company Name"
+            android:textColor="#23436A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter company name"
+            android:inputType="textCapWords"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Job Role"
+            android:textColor="#23436A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter job role"
+            android:inputType="textCapWords"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Package"
+            android:textColor="#23436A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Example: 8 LPA"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2864AD"
+            android:text="SEND UPDATE"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Receiver Status"
+            android:textColor="#23436A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvReceiverStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Waiting for placement update..."
+            android:textColor="#555555"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Company: Not received"
+            android:textColor="#222222"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Role: Not received"
+            android:textColor="#222222"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Package: Not received"
+            android:textColor="#222222"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</ScrollView>

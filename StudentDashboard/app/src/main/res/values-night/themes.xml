@@ -1,0 +1,14 @@
+
+<resources>
+
+    <style name="Theme.StudentDashboard"
+        parent="@android:style/Theme.Material.Light.DarkActionBar">
+
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#2864AD</item>
+        <item name="android:statusBarColor">#1D426D</item>
+        <item name="android:navigationBarColor">#1D426D</item>
+
+    </style>
+
+</resources>
